@@ -12,7 +12,7 @@ import Foundation
 /// Adds additional functionality for validating emails.
 extension String {
 	
-	var isValidEmail : Bool {
+	public var isValidEmail : Bool {
 		self.contains("@") && self.contains(".")
 	}
 }

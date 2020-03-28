@@ -18,13 +18,13 @@ extension Optional where Wrapped == String {
 	}
 	
 	// Checks to make sure email variable contains "@" and "."
-	var isValidEmail : Bool {
+	public var isValidEmail : Bool {
 		print(wrappedValue)
 		return wrappedValue.contains("@") && wrappedValue.contains(".")
 	}
 	
 	// Checks to make sure two strings match.
-	func stringsMatch(compare secondValue : String?) -> Bool {
+	public func stringsMatch(compare secondValue : String?) -> Bool {
 		guard let secondValue = secondValue else {return false}
 		return wrappedValue == secondValue
 	}
